@@ -1,0 +1,61 @@
+@page "/search"
+@using FilmList.Services
+@inject MovieService MovieService
+
+<h3>Recherche</h3>
+
+
+<input @bind="searchQuery" placeholder="Rechercher un film..." @oninput="OnSearchChanged" />
+
+@if (movies == null)
+{
+    <p>Chargement...</p>
+}
+else if (!movies.Any())
+{
+    <p>Aucun résultat trouvé.</p>
+}
+else
+{
+    <div class="movie-list">
+        @foreach (var movie in movies)
+        {
+            <div class="movie-card">
+                <img src="@movie.FullPosterUrl" alt="Affiche du film" width="150" />
+                <div class="movie-title">@movie.Title</div>
+                <p class="movie-description">@movie.Overview</p>
+                <button @onclick="() => ToggleFavorite(movie.Id)">
+                    @(movie.IsFavorite ? "★ Retirer des Favoris" : "☆ Ajouter aux Favoris")
+                </button>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private string searchQuery = "";
+    private List<MovieData> movies = new();
+
+    private async Task OnSearchChanged(ChangeEventArgs e)
+    {
+        searchQuery = e.Value.ToString();
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            movies = await MovieService.SearchMoviesAsync(searchQuery);
+        }
+        else
+        {
+            movies = new List<MovieData>();
+        }
+    }
+
+    private async Task ToggleFavorite(int id)
+    {
+        await MovieService.ToggleFavoriteAsync(id);
+        var favoriteIds = await MovieService.GetFavoritesAsync();
+        foreach (var movie in movies)
+        {
+            movie.IsFavorite = favoriteIds.Contains(movie.Id);
+        }
+    }
+}

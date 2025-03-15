@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/obj/Debug/net8.0/compressed/vbwymfv4g7.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/obj/Debug/net8.0/scopedcss/bundle/FilmList.styles.css",
+      "PackagePath": "staticwebassets/FilmList.styles.css"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/blacky/Documents/Etudes/Bac/2_ieme/Progra/C#/Examen2/FilmListExam/FilmList/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.FilmList.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.FilmList.props",
+      "PackagePath": "build\\FilmList.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.FilmList.props",
+      "PackagePath": "buildMultiTargeting\\FilmList.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.FilmList.props",
+      "PackagePath": "buildTransitive\\FilmList.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
